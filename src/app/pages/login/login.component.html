@@ -1,0 +1,24 @@
+<ion-grid>
+    <ion-row>
+        <ion-col size="3"  class="branding-container"><h1>Water Management System</h1>
+        </ion-col>
+        <ion-col size="9" class="drop-col">
+            <div class="drop-continer"> </div>
+            <div class="form-container">
+                <form [formGroup]="loginForm" action="" (ngSubmit)="onLogin()">
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input pInputText id="username" />
+                </div>
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input pInputText id="password" />
+                </div>
+                <div class="btn-container">
+                    <p-button class="login-btn" type="submit" label="Login" [raised]="true" severity="contrast" />
+                </div>
+            </form>
+            </div>
+        </ion-col>
+    </ion-row>
+</ion-grid>
